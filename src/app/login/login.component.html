@@ -1,0 +1,117 @@
+<div class="content">
+  <!--header  -->
+  <div class="navbar">
+    <div class="brand-logo">
+      <a href="#"
+        ><img
+          src="/assets/quantum-screen-assets/icons/logo used in header.svg"
+          alt=""
+      /></a>
+    </div>
+  </div>
+
+  <!-- middle content -->
+  <form (ngSubmit)="onSubmit(signInForm)" #signInForm="ngForm">
+    <div class="login-form">
+      <div class="login-title">
+        <img
+          class="arrow"
+          src="/assets/quantum-screen-assets/icons/sort.svg"
+          alt=""
+        />
+        <span class="login-head">Log in with Quantum</span>
+      </div>
+
+      <div class="buttons">
+        <input type="radio" name="ds" value="1" />
+        District &nbsp;&nbsp;
+        <input type="radio" name="ds" value="2" />
+        Independent school
+      </div>
+
+      <div class="state-district">
+        <div class="state">
+          <label for="state" style="font-size: small">State*</label>
+          <div>
+            <select id="state" style="margin-top: 0" name="state">
+              <option value="">Alabama</option>
+            </select>
+          </div>
+        </div>
+        <div class="district">
+          <label for="district" style="font-size: small">District*</label>
+          <br />
+          <select id="district" style="margin-top: 0px" name="district">
+            <option value="">Alabama school district</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="username-pwd">
+        <div>
+          <input
+            type="email"
+            name="email"
+            id="uname"
+            placeholder="Username/Email ID*"
+            size="30"
+            required
+            ngModel
+          />
+          <br />
+        </div>
+        <span class="forgot">FORGOT USERNAME?</span>
+
+        <div class="pwd">
+          <input
+            type="password"
+            placeholder="Password*"
+            name="password"
+            required
+            ngModel
+          />
+
+          <img
+            class="preview"
+            src="/assets/quantum-screen-assets/icons/preview.svg"
+            alt=""
+          />
+        </div>
+        <span class="forgot">FORGOT PASSWORD?</span>
+
+        <div class="remember-me">
+          <img
+            style="vertical-align: bottom"
+            src="/assets/quantum-screen-assets/icons/checkbox-checked.svg"
+            alt=""
+          />
+          <span>Remember me</span>
+        </div>
+
+        <div class="login">
+          <input type="submit" class="login-button" value="Log In" />
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-links">
+      <span class="about"><a href="#">About</a></span>
+      <span class="contact-us"><a href="">Contact Us</a></span>
+    </div>
+    <div class="footer-panel">
+      <span class="footer-logo"
+        ><img
+          src="\assets\quantum-screen-assets\icons\logo used in footer.svg"
+          alt=""
+      /></span>
+      <span class="copyright"
+        ><span>Copyright &copy; 2020-2021</span>
+        <span><strong>Zeus Systems Pvt. Ltd.</strong></span
+        ><span> All rights reserved.</span></span
+      >
+    </div>
+  </div>
+</div>
